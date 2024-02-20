@@ -1,0 +1,11 @@
+Enviar site do Projeto Senac Tech por e-mail ou pelo seu drive
+
+mglmatiolla@gmail.com
+Assunto: Primeira parte do site senac tech - INF4N221
+Corpo do e-mail:
+Nome do aluno + anexo do projeto compactado
+
+Observação: O Gmail ou outlook, as vezes acham que códigos HTML são vírus, então pode ser que vc tenha que enviar pelo drive.
+
+Importante
+Assunto: Primeira parte do site senac tech - INF4N221
