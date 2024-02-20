@@ -1,6 +1,6 @@
 # projetoAulaUC14
 - <strong> Utilizar os recursos abordados até o momento no curso.
-- O sistema nesse primeiro momento, deverá ser desenvolvido somente utilizando o HTML</strong>
+- O sistema, nesse primeiro momento, deverá ser desenvolvido somente utilizando o HTML</strong>
 
 ## Projeto de desenvolvimento de um sistema para a escola Senac Tech
 
