@@ -1,3 +1,17 @@
+# Atividade 27/02/2024
+- Criar um formulário de Fale conosco e outro Meu Senac, para o sistema da escola senac tech, e acrescentar no menu de todas as outras páginas, o link para os formulários....dica de nome para as páginaa, "Fale Conosco" e "Meu Senac".
+
+## Links das páginas:
+- https://www.senacrs.com.br/faleconosco
+- https://www.senacrs.com.br/meusenac_cadastrar
+
+### Observação: Os formulários devem ter os mesmos campos dos links
+
+- Ao clicar no botão Enviar, direcionar para a página index.html
+- Dica: Utilizar tabela para alinhar o formulário
+
+<hr>
+
 # projetoAulaUC14
 - <strong> Utilizar os recursos abordados até o momento no curso.
 - O sistema, nesse primeiro momento, deverá ser desenvolvido somente utilizando o HTML</strong>
