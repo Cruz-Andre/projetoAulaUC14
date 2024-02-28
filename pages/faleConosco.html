@@ -125,6 +125,7 @@
 							size="50" 
 							maxlength="50" 
 							required
+							onchange="validar()"
 						>
 					</td>
 				</tr>
@@ -145,6 +146,7 @@
 							size="50" 
 							maxlength="50" 
 							required
+							onchange="validar()"
 						>
 					</td>
 				</tr>
@@ -248,5 +250,21 @@
         <h4 align="center">Desenvolvido por André Cruz &copy</h4>
     </footer>
     <hr>
+
+	<script>
+		function validar() {
+			var campo1 = document.getElementById("emailInput");
+			var campo2 = document.getElementById("confEmailInput");
+			if (campo1.value != campo2.value) {
+				campo2.setCustomValidity("O e-mail não confere");
+				campo2.validity = false;
+			} else {
+				campo2.setCustomValidity("");
+				campo2.validity = true;
+			}
+
+		}
+
+	</script>
 </body>	
 </html>
