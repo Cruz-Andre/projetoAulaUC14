@@ -1,3 +1,7 @@
+# Atividade 01/03/2024 (aula 17)
+- Aplicar o estilo CSS na página index do site da escola Senac Tech (criar um CSS externo).
+- Para entregar até segunda 04/03/2024
+
 # Atividade 27/02/2024
 - Criar um formulário de Fale conosco e outro Meu Senac, para o sistema da escola senac tech, e acrescentar no menu de todas as outras páginas, o link para os formulários....dica de nome para as páginaa, "Fale Conosco" e "Meu Senac".
 

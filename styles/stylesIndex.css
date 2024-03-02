@@ -1,0 +1,159 @@
+/* Cabeçalho: 
+ * com os links sem underline
+ * com plano de fundo
+ * Espaçamento entre os links maior
+*/
+
+/* Inicio Cabeçalho */
+.menuCabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.menuLinks {
+    background-color: #F77D0C;
+    padding: 25px 0;
+    border-radius: 10px;
+}
+
+.menuLinks a {
+    color: aliceblue;
+    margin: 10px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menuLinks a:hover {
+    color: #2C68A3;
+}
+
+/* Fim Cabeçalho */
+
+/* Inicio Conteúdo */
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.hashTag {
+    font-size: 5rem;
+    margin: auto;
+    color: #3E3E3E;
+}
+
+.hashTag span {
+    color: #F77D0C;
+}
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    column-gap: 1%;
+    margin-bottom: 10%;
+}
+
+.depoimento img {
+    border-radius: 50%;
+}
+
+.depAluno {
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia1 .pids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.notInfo {
+    display: flex;
+    column-gap: 1%;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.notInfo img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.pids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.pidsInfo {
+    display: flex;
+    column-gap: 1%;
+}
+
+.pidsInfo img {
+    border-radius: 10px;
+    width: 250px;
+    order: 3;
+} 
+
+.pidsInfo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.pidsInfo2 h2, .pidsInfo2 p {
+    margin-top: 0;
+}
+
+/* Fim Conteúdo */
+
+
+/* conquistas */
+.conquistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    font-family: sans-serif;
+}
+
+.conqLogos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Seta para cima */
+.setaUP {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.setaUP img {
+    width: 68px;
+}
+
+
+/* Inicio Rodapé */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 100px;
+}
+
+

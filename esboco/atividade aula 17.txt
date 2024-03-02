@@ -1,0 +1,14 @@
+Aplicar o estilo CSS na página index do site da escola Senac Tech (criar um CSS externo)
+
+Para entregar até segunda 04/03/2024
+Enviar por e-mail
+mglmatiolla@gmail.com
+Assunto: Atividade 3 - Formatação CSS index - INF4N221
+
+Observação: 
+* Retirar toda formatação do html da página e substituir pelo CSS (vcs podem mudar totalmente o layout da index caso achem necessário).
+* Mandar o projeto inteiro
+* Já podem iniciar a formatação das demais páginas do sistema
+
+
+Dúvidas é só chamar :)
