@@ -1,0 +1,30 @@
+/* Inicio Cabeçalho */
+.menuCabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.menuLinks {
+    background-color: #F77D0C;
+    padding: 25px 0;
+    border-radius: 10px;
+}
+
+.menuLinks a {
+    color: aliceblue;
+    margin: 10px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menuLinks a:hover {
+    color: #2C68A3;
+}
+
+.menuLinks a:active {
+    color: antiquewhite;
+}
+
+/* Fim Cabeçalho */

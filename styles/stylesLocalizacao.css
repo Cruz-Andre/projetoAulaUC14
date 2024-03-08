@@ -1,0 +1,10 @@
+.local h1 {
+    text-align: center;
+}
+
+.localIfrImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
