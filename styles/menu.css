@@ -28,3 +28,9 @@
 }
 
 /* Fim Cabeçalho */
+
+@media (max-width: 800px) {
+    .menuCabecalho {
+        flex-direction: column;
+    }    
+}

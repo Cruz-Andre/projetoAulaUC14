@@ -25,6 +25,11 @@
     color: #F77D0C;
 }
 
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+}
+
 .depoimento {
     display: flex;
     justify-content: center;
@@ -91,43 +96,25 @@
 
 /* Fim Conteúdo */
 
+@media (max-width: 800px) {
+    .pidsInfo {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
 
-/* conquistas */
-.conquistas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5%;
-    font-family: sans-serif;
+    .notInfo {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.conqLogos {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+@media (max-width: 500px) {
+    .hashTag {
+        font-size: 4rem;
+    }
+
+    iframe {
+        width: fit-content;
+    }
 }
-
-/* Seta para cima */
-.setaUP {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.setaUP img {
-    width: 68px;
-}
-
-
-/* Inicio Rodapé */
-.rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.rodape img {
-    width: 100px;
-}
-
-

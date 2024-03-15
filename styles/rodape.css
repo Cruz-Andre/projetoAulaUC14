@@ -35,3 +35,10 @@
 .rodape img {
     width: 100px;
 }
+
+@media (max-width: 1350px) {
+    .conqLogos {
+        flex-direction: column;
+        row-gap: 10px;
+    }    
+}
