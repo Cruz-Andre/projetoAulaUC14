@@ -4,6 +4,10 @@
  * Espaçamento entre os links maior
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Inicio Conteúdo */
 .historia {
     display: flex;
@@ -33,6 +37,7 @@
 .depoimento {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 1%;
     margin-bottom: 10%;
 }
@@ -96,6 +101,13 @@
 
 /* Fim Conteúdo */
 
+@media (min-width: 1200px) {
+    .historia {
+        width: 64%;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 800px) {
     .pidsInfo {
         flex-direction: column;
@@ -110,11 +122,16 @@
 }
 
 @media (max-width: 500px) {
-    .hashTag {
-        font-size: 4rem;
+    iframe {
+        width: -webkit-fill-available;
     }
 
-    iframe {
-        width: fit-content;
+    .depoimentos {
+        align-items: center;
+    }
+
+    .hashTag {
+        padding: 10px;
+        font-size: 3rem;
     }
 }

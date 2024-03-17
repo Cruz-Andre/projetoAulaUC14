@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Inicio Conteúdo */
 .tecInf, .tecADS, .tecADM {
     margin-bottom: 2%;
@@ -40,6 +44,10 @@
     row-gap: 1rem;
 }
 
+.rsTIIMG, .jovApr img {
+    width: 800px;
+}
+
 .tabelaCursos, th, td {
     text-align: center;
     border: 4px solid grey;
@@ -50,3 +58,17 @@ tbody td p {
 }
 
 /* Fim Conteúdo */
+
+@media (max-width: 920px) {
+    .tecInfConteudo, .tecADSConteudo, .tecADMConteudo {
+        flex-direction: column;
+    }
+
+    .rsTIIMG, .jovApr img {
+        width: 400px;
+    }
+
+    .tabelaCursos, th, td {
+        font-size: smaller;
+    }
+}

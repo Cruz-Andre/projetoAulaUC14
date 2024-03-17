@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .local h1 {
     text-align: center;
 }
@@ -7,4 +11,20 @@
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
+}
+
+.localIfrImg iframe {
+    width: 600px;
+    height: 450px;
+}
+
+@media (max-width: 920px) {
+    .localIfrImg iframe {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .localIfrImg img {
+        width: 400px;
+    }
 }
