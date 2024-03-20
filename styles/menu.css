@@ -35,7 +35,7 @@ header {
 
 /* Fim Cabeçalho */
 
-@media (max-width: 800px) {
+@media (max-width: 1056px) {
     .menuCabecalho {
         flex-direction: column;
     }
@@ -47,6 +47,11 @@ header {
         align-items: center;
         margin: 10px 0 10px 0;
         padding: 5px 0;
+    }
+
+    .redesSoc {
+        display: flex;
+        column-gap: 2rem;
     }
     
 }

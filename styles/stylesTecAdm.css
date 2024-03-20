@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.contPrin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoPrinc {
+    text-align: justify;
+}
+
+.textoPrinc strong p {
+    text-align: center;
+}
+
+.contPrin h2, .contPrin h3, .contPrin strong p {
+    text-align: center;
+}
+
+.programa {
+    width: 100%;
+}
+
+.programa h3 {
+    text-align: left;
+}
+
+.tableTurma, td, th {
+    border: 4px solid grey;
+}
+
+@media (max-width: 920px) {
+    .tableTurma, td, th {
+        font-size: small;
+    }
+}

@@ -1,3 +1,7 @@
+# Atividade em aula 19/03/2024 (aula 28)
+- Aplicar o estilo CSS em todo o projeto.
+- Sistema todo responsivo.
+
 # Atividade 01/03/2024 (aula 17)
 - Aplicar o estilo CSS na página index do site da escola Senac Tech (criar um CSS externo).
 - Para entregar até segunda 04/03/2024

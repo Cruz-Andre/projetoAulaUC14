@@ -43,6 +43,7 @@ fieldset {
 
 .dados input[type="text"], 
 .dados input[type="email"],
+.dados input[type="password"],
 .dados input[type="tel"],
 .dados select,
 .dados textarea {
@@ -69,6 +70,21 @@ fieldset {
 
 .dados {
     color: #666;
+}
+
+.dadosCheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadosCheck p {
+    font-size: 2rem;
+}
+
+.dadosCheck input {
+    width: 30px;
+    height: 30px;
 }
 
 .botao {
@@ -105,6 +121,7 @@ fieldset {
 
     .dados input[type="text"], 
     .dados input[type="email"],
+    .dados input[type="password"],
     .dados input[type="tel"],
     .dados select,
     .dados textarea {
@@ -115,6 +132,11 @@ fieldset {
 
     #telefoneInputNum {
         width: 80%;
+    }
+
+    .dadosCheck input {
+        width: 70px;
+        height: 40px;
     }
 
     .botao {

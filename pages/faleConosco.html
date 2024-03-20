@@ -1,15 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="../img/logos/LogoVertical-Senac-Regional_cor.jpg">
-	<link rel="stylesheet" type="text/css" href="../styles/menu.css">
-	<link rel="stylesheet" type="text/css" href="../styles/styleFaleConosco.css">
-	<link rel="stylesheet" type="text/css" href="../styles/rodape.css">
-	<title>Fale Conosco</title>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../img/logos/LogoVertical-Senac-Regional_cor.jpg">
+		<link rel="stylesheet" type="text/css" href="../styles/menu.css">
+		<link rel="stylesheet" type="text/css" href="../styles/styleFaleConosco.css">
+		<link rel="stylesheet" type="text/css" href="../styles/rodape.css">
+		<title>Fale Conosco</title>
 	<head>
 
 	<body id="s1">
@@ -25,10 +24,10 @@
 					<a href="./faleConosco.html">FALE CONOSCO</a>
 					<a href="./meuSenac.html">MEU SENAC</a>
 				</div>
-				<a href="https://www.facebook.com/senactech" target="_blank" rel="noopener noreferrer"><img
-						src="../img/icon_facebook.png" alt="logo facebook"></a>
-				<a href="https://www.instagram.com/senactech/" target="_blank" rel="noopener noreferrer"><img
-						src="../img/icon_instagram.png" alt="logo instagram"></a>
+				<div class="redesSoc">
+					<a href="https://www.facebook.com/senactech" target="_blank" rel="noopener noreferrer"><img src="../img/icon_facebook.png" alt="logo facebook"></a>
+					<a href="https://www.instagram.com/senactech/" target="_blank" rel="noopener noreferrer"><img src="../img/icon_instagram.png" alt="logo instagram"></a>
+				</div>
 			</nav>
 		</header>
 		<hr>
@@ -59,7 +58,7 @@
 
 						<fieldset class="bloco">
 							<div class="dados">
-								<label for="estado">Estado</label>
+								<label for="estado">*Estado</label>
 								<select name="estado" id="estado">
 									<option value="Acre">Acre</option>
 									<option value="Alagoas">Alagoas</option>
@@ -120,7 +119,7 @@
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="modalidadeInput">*Modalidade:</label>
-								<select name="uf" id="modalidadeInput" required>
+								<select name="modalidadeInput" id="modalidadeInput" required>
 									<option selected disabled>Selecionar Modalidade</option>
 									<option value="cp">Curso Presencial</option>
 									<option value="ead">Curso Ténico EAD</option>
@@ -131,7 +130,7 @@
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="assuntoInput">*Assunto:</label>
-								<select name="uf" id="assuntoInput" required>
+								<select name="assuntoInput" id="assuntoInput" required>
 									<option selected value="di">Dúvidas/Informações</option>
 									<option value="sol">Solicitações</option>
 									<option value="elo">Elogios</option>
@@ -197,6 +196,7 @@
 		</footer>
 		<hr>
 
+		<!-- 
 		<script>
 			function validar() {
 				var campo1 = document.getElementById("emailInput");
@@ -211,7 +211,8 @@
 
 			}
 
-		</script>
+		</script> 
+		-->
 	</body>
 
 </html>
