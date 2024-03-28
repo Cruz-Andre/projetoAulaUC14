@@ -35,6 +35,6 @@ html {
 
 @media (max-width: 920px) {
     .tableTurma, td, th {
-        font-size: small;
+        font-size: smaller;
     }
 }
