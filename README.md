@@ -1,13 +1,17 @@
+# Atividade em aula dias 27 e 28/03/2024
+- Terminar o projeto :white_check_mark:
+- Menu hamburguer responsivo :white_check_mark:
+
 # Atividade em aula 19/03/2024 (aula 28)
-- Aplicar o estilo CSS em todo o projeto.
-- Sistema todo responsivo.
+- Aplicar o estilo CSS em todo o projeto. :white_check_mark:
+- Sistema todo responsivo. :white_check_mark:
 
 # Atividade 01/03/2024 (aula 17)
-- Aplicar o estilo CSS na página index do site da escola Senac Tech (criar um CSS externo).
-- Para entregar até segunda 04/03/2024
+- Aplicar o estilo CSS na página index do site da escola Senac Tech (criar um CSS externo). :white_check_mark:
+- Para entregar até segunda 04/03/2024. :white_check_mark:
 
 # Atividade 27/02/2024
-- Criar um formulário de Fale conosco e outro Meu Senac, para o sistema da escola senac tech, e acrescentar no menu de todas as outras páginas, o link para os formulários....dica de nome para as páginaa, "Fale Conosco" e "Meu Senac".
+- Criar um formulário de Fale conosco e outro Meu Senac, para o sistema da escola senac tech, e acrescentar no menu de todas as outras páginas, o link para os formulários....dica de nome para as páginaa, "Fale Conosco" e "Meu Senac". :white_check_mark:
 
 ## Links das páginas:
 - https://www.senacrs.com.br/faleconosco

@@ -1,57 +1,122 @@
-/* Inicio Cabeçalho */
-header {
-    width: 100%;
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F77D0C;
+	font-family: sans-serif;
+	padding-right: 1rem;
+	border-radius: 5px;
 }
 
-.menuCabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.cabecalhoBotao {
+	display: none;
+}
+
+/*  ~ combinador (irmão geral) OU + combinador (irmão próximo) para
+mudar a imagem do menu quando for clicado. Usa o combinador filho para
+selecinar a classe .cabecalho__menu-hamburquer onde está a imagem. */
+.cabecalhoBotao:checked~.cabecalhoLabel>.cabecalhoMenuHamburguer {
+	background-image: url(../img/MenuAberto.svg);
+}
+
+.cabecalhoLabel {
+	cursor: pointer;
+	padding: 1rem;
+}
+
+.cabecalhoMenuHamburguer {
+	width: 24px;
+	height: 24px;
+	background-image: url("../img/menuFechado.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+/*  ~ combinador (irmão geral) OU + combinador (irmão próximo) para abrir o menu */
+.cabecalhoBotao:checked ~ .cabecalhoMenu {
+	margin-left: 0;
+	height: auto;
+}
+
+.cabecalhoMenu {
+	position: absolute;
+	top: 5rem;
+	transition: all 1s;
+	background-color: #F77D0C;
+	margin-left: -100%;
+	height: auto;
+	border-radius: 0 30px;
+}
+
+.cabecalhoLista {
+	margin: 0;
+	padding: 0;
+}
+
+.cabecalhoItem {
+	margin: 20px;
+	list-style: none;
+}
+
+.cabecalhoItemLink:hover {
+	color: #2C68A3;
+}
+
+.cabecalhoItemLink {
+	color: aliceblue;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.logoImg {
+	display: flex;
+}
+
+.logoImg img {
+	border-radius: 5px;
+	margin: 5px 0;
 }
 
 
-.menuLinks {
-    background-color: #F77D0C;
-    padding: 25px 0;
-    border-radius: 10px;
+
+.redesSoc {
+	display: flex;
+	column-gap: 1rem;
 }
 
-.menuLinks a {
-    color: aliceblue;
-    margin: 10px;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
 
-.menuLinks a:hover {
-    color: #2C68A3;
-}
 
-.menuLinks a:active {
-    color: antiquewhite;
-}
+/* Para telas maiores que 773px */
+@media screen and (min-width: 773px) {
+	.cabecalho {
+		padding: 0 1rem;
+	}
 
-/* Fim Cabeçalho */
+	.cabecalhoLabel {
+		display: none;
+	}
 
-@media (max-width: 1056px) {
-    .menuCabecalho {
-        flex-direction: column;
-    }
-    
-    .menuLinks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0 10px 0;
-        padding: 5px 0;
-    }
+	.cabecalhoMenu {
+		position: unset;
+		order: 1;
+		margin: 0;
+	}
 
-    .redesSoc {
-        display: flex;
-        column-gap: 2rem;
-    }
-    
+	.cabecalhoLista {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cabecalhoItem {
+		margin: 10px;
+	}
+
+	.redesSoc {
+		order: 1;
+	}
+
 }

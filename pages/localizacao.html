@@ -13,25 +13,34 @@
 
 <body id="s1">
     <!-- Cabeçalho -->
-    <hr>
-    <header>
-        <nav class="menuCabecalho">
-            <img src="../img/senac_logo_new.png" alt="logo senac">
-            <div class="menuLinks">
-                <a href="../index.html">INICIO</a>
-                <a href="./cursos.html">CURSOS</a>
-                <a href="./localizacao.html">LOCALIZAÇÃO</a>
-                <a href="./faleConosco.html">FALE CONOSCO</a>
-                <a href="./meuSenac.html">MEU SENAC</a>
-            </div>
-            <div class="redesSoc">
-                <a href="https://www.facebook.com/senactech" target="_blank" rel="noopener noreferrer"><img src="../img/icon_facebook.png" alt="logo facebook"></a>
-                <a href="https://www.instagram.com/senactech/" target="_blank" rel="noopener noreferrer"><img src="../img/icon_instagram.png" alt="logo instagram"></a>
-            </div>
-        </nav>
-    </header>
-    <hr>
-    <!-- Fim Cabecalho -->
+	<hr>
+	<header class="cabecalho">
+		<input type="checkbox" id="menu" class="cabecalhoBotao">
+		<label for="menu" class="cabecalhoLabel"><span class="cabecalhoMenuHamburguer"></span></label>
+
+		<nav class="cabecalhoMenu">
+			<ul class="cabecalhoLista">
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink cabecalhoItemLinkAtivo"	href="../index.html">INICIO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./cursos.html">CURSOS</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./localizacao.html">LOCALIZAÇÃO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./faleConosco.html">FALE CONOSCO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./meuSenac.html">MEU SENAC</a></li>
+			</ul>
+		</nav>
+
+		<div class="logoImg">
+			<img src="../img/logos/LogoHorizontal-Senac-Regional_cor.png" alt="logo senac">
+		</div>
+		
+		<div class="redesSoc">
+			<a href="https://www.facebook.com/senactech" target="_blank" rel="noopener noreferrer"><img
+					src="../img/icon_facebook.png" alt="logo facebook"></a>
+			<a href="https://www.instagram.com/senactech/" target="_blank" rel="noopener noreferrer"><img
+					src="../img/icon_instagram.png" alt="logo instagram"></a>
+		</div>
+	</header>
+	<hr>
+	<!-- Fim Cabecalho -->
 
     <!-- Conteúdo Principal -->
     <div class="local">
