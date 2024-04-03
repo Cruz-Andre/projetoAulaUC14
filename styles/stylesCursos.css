@@ -24,6 +24,7 @@ html {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 1rem;
 }
 
 .tecInfConteudo img,
@@ -33,7 +34,8 @@ html {
 }
 
 .tecInfTexto,
-.tecADSTexto {
+.tecADSTexto,
+.tecADMTexto {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -43,6 +45,24 @@ html {
 	display: flex;
 	align-items: center;
 	column-gap: 1rem;
+}
+
+.botaoAqui {
+	padding: 1rem 0.5rem 1rem 0.5rem;
+	border-radius: 1rem;
+	background-color: antiquewhite;
+	text-decoration: none;
+	color: #FE6002;
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 700;
+	margin: 1rem 0 1rem 0;
+}
+
+.botaoAqui:hover {
+	background-color: rgba(255, 166, 0, 0.616);
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 5px;
 }
 
 .rsTI,
@@ -58,15 +78,12 @@ html {
 	width: 800px;
 }
 
-.tabelaCursos,
-tr,
-td {
+.tituloCurLiv {
 	text-align: center;
-	border: 4px solid grey;
 }
 
-tbody td p {
-	text-align: justify;
+.maisInfoCurLiv {
+	text-align: center;
 }
 
 /* Fim Conteúdo */
@@ -82,23 +99,5 @@ tbody td p {
 	.rsTIIMG,
 	.jovApr img {
 		width: 400px;
-	}
-
-	.tituloTab {
-		font-size: 1.9rem;
-		margin: 1px auto;
-	}
-
-	.columTab {
-		font-size: 0.9rem;
-		margin: 1px auto;
-	}
-
-	.tabelaCursos tr td h3 {
-		font-size: 0.85rem;
-	}
-
-	.tabelaCursos tr td p {
-		font-size: 0.85rem;
 	}
 }

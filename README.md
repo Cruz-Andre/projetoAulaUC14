@@ -1,3 +1,7 @@
+# Atividade em aula dia 02/04/2024 - Revisão do projeto
+- tirar a tabela do cursos :white_check_mark:
+- botão no "clique aqui saiba mais" :white_check_mark:
+
 # Atividade em aula dias 27 e 28/03/2024
 - Terminar o projeto :white_check_mark:
 - Menu hamburguer responsivo :white_check_mark:

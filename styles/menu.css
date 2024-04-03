@@ -78,6 +78,7 @@ selecinar a classe .cabecalho__menu-hamburquer onde está a imagem. */
 .logoImg img {
 	border-radius: 5px;
 	margin: 5px 0;
+	width: 175px;
 }
 
 
