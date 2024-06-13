@@ -54,14 +54,16 @@
 					<p>Todos os campos são obrigatórios.</p>
 				</div>
 
-				<form action="#" method="post">
+				<form action="../php/processaFC.php" method="post">
 					<!-- Fieldset é usado para agrupar elementos -->
 					<fieldset><!-- Início do fieldset principal -->
 
 						<fieldset class="bloco">
 							<div class="dados">
-								<label for="nomeCInput">*Nome Completo:</label>
-								<input type="text" id="nomeCInput" name="nomecompleto" required>
+								<label for="nomeCompleto">*Nome Completo:</label>
+								<input type="text" id="nomeCompleto" name="nomeCompleto" 
+									title="O nome não pode conter caracteres inválidos."
+									pattern="^[A-Za-zÀ-ÿ\s]+$" required>
 							</div>
 						</fieldset>
 
@@ -103,14 +105,17 @@
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="cidade">*Cidade</label>
-								<input type="text" id="cidade" name="cidade" required>
+								<input type="text" id="cidade" name="cidade" 
+									title="Apenas caracteres alfabéticos são permitidos" 
+									pattern="^[A-Za-zÀ-ÿ\s]+$" required>
 							</div>
 						</fieldset>
 
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="email">*E-mail</label>
-								<input type="email" id="email" name="email" title="O formato do e-mail deve ser: nome@provedor.com"
+								<input type="email" id="email" name="email" 
+									title="O formato do e-mail deve ser: nome@provedor.com"
 									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 							</div>
 						</fieldset>
@@ -118,48 +123,50 @@
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="celular">*Celular</label>
-								<input type="tel" name="ddd" id="telefoneInputDDD" maxlength="2"
-									title="O número de DDD deve ter 2 dígitos" pattern="[0-9]{2}" placeholder="DDD" required>
-								<input type="tel" name="telefone" id="telefoneInputNum" maxlength="9"
-									title="O número deve ter 9 dígitos" pattern="[0-9]{9}" placeholder="Número" required>
+								<input type="tel" name="celular" id="celular" maxlength="11"
+									title="Deve ter 2 digitos para o DDD e 9 para o número" 
+									pattern="[0-9]{11}" required>
 							</div>
 						</fieldset>
 
 						<fieldset class="bloco">
 							<div class="dados">
-								<label for="modalidadeInput">*Modalidade:</label>
-								<select name="modalidadeInput" id="modalidadeInput" required>
-									<option selected disabled>Selecionar Modalidade</option>
-									<option value="cp">Curso Presencial</option>
-									<option value="ead">Curso Ténico EAD</option>
+								<label for="modalidade">*Modalidade:</label>
+								<select name="modalidade" id="modalidade" required>
+									<option value="" selected disabled hidden>Selecionar Modalidade</option>
+									<option value="Curso Presencial">Curso Presencial</option>
+									<option value="Curso Técnico EAD">Curso Técnico EAD</option>
 								</select>
 							</div>
 						</fieldset>
 
 						<fieldset class="bloco">
 							<div class="dados">
-								<label for="assuntoInput">*Assunto:</label>
-								<select name="assuntoInput" id="assuntoInput" required>
-									<option selected value="di">Dúvidas/Informações</option>
-									<option value="sol">Solicitações</option>
-									<option value="elo">Elogios</option>
-									<option value="sug">Sugestões</option>
-									<option value="rec">Reclamações</option>
+								<label for="assunto">*Assunto:</label>
+								<select name="assunto" id="assunto" required>
+									<option selected value="DúvidasInformações">Dúvidas/Informações</option>
+									<option value="Solicitações">Solicitações</option>
+									<option value="Elogios">Elogios</option>
+									<option value="Sugestões">Sugestões</option>
+									<option value="Reclamações">Reclamações</option>
 								</select>
 							</div>
 						</fieldset>
 
 						<fieldset class="bloco">
 							<div class="dados">
-								<label for="mensInput">*Mensagem:</label>
-								<textarea name="mensagem" id="mensInput" cols="30" rows="4" required></textarea>
+								<label for="mensagem">*Mensagem:</label>
+								<textarea name="mensagem" id="mensagem" cols="30" rows="4" 
+									pattern="^[A-Za-z0-9\sÀ-ÿ?!@$%(),.:]+$"	maxlength="500" required></textarea>
 							</div>
 						</fieldset>
 
 						<fieldset class="bloco">
 							<div class="dados">
 								<label for="cpfInput">*CPF:</label>
-								<input type="text" id="cpfInput" name="cpf" maxlength="11" required>
+								<input type="text" id="cpfInput" name="cpf" maxlength="11"
+									title="Somente números, sem ponto ou traço" 
+									pattern="[0-9]{11}" required>
 							</div>
 						</fieldset>
 
@@ -205,23 +212,7 @@
 		</footer>
 		<hr>
 
-		<!-- 
-		<script>
-			function validar() {
-				var campo1 = document.getElementById("emailInput");
-				var campo2 = document.getElementById("confEmailInput");
-				if (campo1.value != campo2.value) {
-					campo2.setCustomValidity("O e-mail não confere");
-					campo2.validity = false;
-				} else {
-					campo2.setCustomValidity("");
-					campo2.validity = true;
-				}
-
-			}
-
-		</script> 
-		-->
+		<script type="module" src="../js/validacoes.js"></script>
 	</body>
 
 </html>

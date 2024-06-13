@@ -1,3 +1,10 @@
+# Atividade em aula dia 12/06/2024
+- criptografar senha.
+
+# Retomada do projeto da UC14 para UC15 dia 05/06/2024
+- Criar o banco de dados dos formulário
+- Fazer o back-end em PHP dos formulários (usando classes)
+
 # Atividade em aula dia 02/04/2024 - Revisão do projeto
 - tirar a tabela do cursos :white_check_mark:
 - botão no "clique aqui saiba mais" :white_check_mark:
@@ -28,7 +35,7 @@
 
 <hr>
 
-# projetoAulaUC14
+# projetoAulaUC14_UC15
 - <strong> Utilizar os recursos abordados até o momento no curso.
 - O sistema, nesse primeiro momento, deverá ser desenvolvido somente utilizando o HTML</strong>
 

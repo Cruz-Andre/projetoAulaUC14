@@ -53,24 +53,25 @@
 				<p>Todos os campos são obrigatórios.</p>
 			</div>
 
-			<form action="#" method="post">
+			<form action="../php/processaMS.php" method="post">
 				<!-- Fieldset é usado para agrupar elementos -->
 				<fieldset><!-- Início do fieldset principal -->
 
 					<fieldset class="bloco">
 						<div class="dados">
-							<label for="nomeCInput">*Nome Completo:</label>
-							<input type="text" id="nomeCInput" name="nomecompleto" required>
+							<label for="nomeCompleto">*Nome Completo:</label>
+							<input type="text" id="nomeCompleto" name="nomeCompleto" 
+								title="O nome não pode conter caracteres inválidos." 
+								pattern="^[A-Za-zÀ-ÿ\s]+$" required>
 						</div>
 					</fieldset>
 					
 					<fieldset class="bloco">
 						<div class="dados">
 							<label for="celular">*Celular</label>
-							<input type="tel" name="ddd" id="telefoneInputDDD" maxlength="2"
-								title="O número de DDD deve ter 2 dígitos" pattern="[0-9]{2}" placeholder="DDD" required>
-							<input type="tel" name="telefone" id="telefoneInputNum" maxlength="9"
-								title="O número deve ter 9 dígitos" pattern="[0-9]{9}" placeholder="Número" required>
+							<input type="tel" name="celular" id="celular" maxlength="11"
+								title="Deve ter 2 digitos para o DDD e 9 para o número" 
+								pattern="[0-9]{11}" required>
 						</div>
 					</fieldset>
 
@@ -112,22 +113,25 @@
 					<fieldset class="bloco">
 						<div class="dados">
 							<label for="cidade">*Cidade</label>
-							<input type="text" id="cidade" name="cidade" required>
+							<input type="text" id="cidade" name="cidade" 
+								title="Apenas caracteres alfabéticos são permitidos" 
+								pattern="^[A-Za-zÀ-ÿ\s]+$" required>
 						</div>
 					</fieldset>
 
 					<fieldset class="bloco">
 						<div class="dados">
 							<label for="email">*E-mail</label>
-							<input type="email" id="email" name="email" title="O formato do e-mail deve ser: nome@provedor.com"
+							<input type="email" id="email" name="email" 
+								title="O formato do e-mail deve ser: nome@provedor.com"
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 						</div>
 					</fieldset>
 
 					<fieldset class="bloco">
 						<div class="dados">
-							<label for="senhaInput">*Senha:</label>
-							<input type="password" name="senha" id="senhaInput" 
+							<label for="senha">*Senha:</label>
+							<input type="password" name="senha" id="senha" 
 								title="A senha deve ter no mínimo 4 carateres"
 								placeholder="Mínimo 4 carateres"
 								pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -138,14 +142,16 @@
 
 					<fieldset class="bloco">
 						<div class="dados">
-							<label for="cpfInput">*CPF:</label>
-							<input type="text" id="cpfInput" name="cpf" maxlength="11" required>
+							<label for="cpf">*CPF:</label>
+							<input type="text" id="cpf" name="cpf" maxlength="11"
+								title="Somente números, sem ponto ou traço" 
+								pattern="[0-9]{11}" required>
 						</div>
 					</fieldset>
 
 					<fieldset class="bloco">
 						<div class="dados dadosCheck">
-							<p>*</p><input type="checkbox" required>
+							<p>*</p><input type="checkbox" name="autoriza" value="1" required>
 							<label>Autorizo o Senac-RS me contatar e realizar o envio de informações relacionadas aos seus produtos/serviços e eventos</label>
 						</div>
 					</fieldset>
