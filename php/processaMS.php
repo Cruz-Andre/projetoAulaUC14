@@ -35,7 +35,7 @@
     echo "
       <script language='javascript' type='text/javascript'>
         alert('Cadastro realizado com sucesso!')
-        window.location.href='../pages/meuSenac.html';
+        window.location.href='../pages/meuSenac.php';
       </script>
     ";
     die();

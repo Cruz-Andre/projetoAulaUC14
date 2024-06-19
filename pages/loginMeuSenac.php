@@ -1,3 +1,8 @@
+<?php 
+	session_start();
+	$_SESSION['pagina_anterior'] = $_SERVER['HTTP_REFERER'];
+?>
+
 <!DOCTYPE HTML>
 <html lang="pt-br">
 
@@ -20,11 +25,23 @@
 
 		<nav class="cabecalhoMenu">
 			<ul class="cabecalhoLista">
-				<li class="cabecalhoItem"><a class="cabecalhoItemLink cabecalhoItemLinkAtivo"	href="../index.html">INICIO</a></li>
-				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./cursos.html">CURSOS</a></li>
-				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./localizacao.html">LOCALIZAÇÃO</a></li>
-				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./faleConosco.html">FALE CONOSCO</a></li>
-				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./meuSenac.html">MEU SENAC</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink cabecalhoItemLinkAtivo"	href="../index.php">INICIO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./cursos.php">CURSOS</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./localizacao.php">LOCALIZAÇÃO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./faleConosco.php">FALE CONOSCO</a></li>
+				<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./meuSenac.php">MEU SENAC</a></li>
+				<?php 
+					if (isset($_SESSION['nome_usu_sessao'])) {
+						echo '<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./loginMeuSenac.php?logout">User: '.$_SESSION['nome_usu_sessao'].' Sair</a></li>';
+					} else {
+						echo '<li class="cabecalhoItem"><a class="cabecalhoItemLink" href="./loginMeuSenac.php">LOGIN</a></li>';
+					}
+
+					if (isset($_GET['logout'])) {
+						session_destroy();
+						header("Location: ./loginMeuSenac.php");
+					}
+				?>
 			</ul>
 		</nav>
 
@@ -53,7 +70,7 @@
 				<p>Todos os campos são obrigatórios.</p>
 			</div>
 
-			<form action="../php/processaMS.php" method="post">
+			<form action="../php/verificarLogin.php" method="post">
 				<!-- Fieldset é usado para agrupar elementos -->
 				<fieldset><!-- Início do fieldset principal -->
 
@@ -70,16 +87,11 @@
 					<fieldset class="bloco">
 						<div class="dados">
 							<label for="senha">*Senha:</label>
-							<input type="password" name="senha" id="senha" 
-								title="A senha deve ter no mínimo 4 carateres"
-								placeholder="Mínimo 4 carateres"
-								pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-								required
-							>
+							<input type="password" name="senha" id="senha" required>
 						</div>
 					</fieldset>
 
-					<button type="submit" class="botao" name="logar">Logar</button>
+					<button type="submit" class="botao" name="entrar">Logar</button>
 
 				</fieldset><!-- Fim do fieldset principal -->
 			</form>

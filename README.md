@@ -1,5 +1,9 @@
-# Atividade em aula dia 13/06/2024
-- criar página de login
+# Atividade em aula dia 17/06/2024
+- Criar uma tela de login;
+- O login do sistema deve ser realizado pelo cadastro do Meu senac;
+- Após logar no sistema, o usuário deve aparecer logado em todas as páginas do site;
+- O usuário pode realizar logout em todas as páginas que ele estiver logado;
+- Utilizar sessão para manter o usuário logado.
 
 # Atividade em aula dia 12/06/2024
 - criptografar senha.
